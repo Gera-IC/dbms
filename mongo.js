@@ -28,7 +28,7 @@ function select(client, cmd) {
 		options.projection = fields;
 
 	if (opt.take)
-		options.take = opt.take;
+		options.limit = opt.take;
 
 	if (opt.skip)
 		options.skip = opt.skip;
@@ -68,8 +68,8 @@ function query(client, cmd) {
 		options.projection = fields;
 
 	if (opt.take)
-		options.take = opt.take;
-
+		options.limit = opt.take;
+	
 	if (opt.skip)
 		options.skip = opt.skip;
 
@@ -98,8 +98,8 @@ function list(client, cmd) {
 		options.projection = fields;
 
 	if (opt.take)
-		options.take = opt.take;
-
+		options.limit = opt.take;
+	
 	if (opt.skip)
 		options.skip = opt.skip;
 
